@@ -1,9 +1,10 @@
 class Book():
     favs = [] #class
 
-    def __init__(self, title, pages):
+    def __init__(self, title:str, pages:int):
         self.title = title
         self.pages = pages
+        self.extras = []
 
     def is_short(self):
         if self.pages < 100:
